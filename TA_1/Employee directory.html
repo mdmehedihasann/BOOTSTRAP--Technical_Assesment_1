@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+This code was written by:
+Md Mehedi Hasan Nahid
+CTG-07 (DIU - 2)
+Student ID: 2903,
+Phone: 01623534422
+Email: dhrubo.smm@gmail.com
+-->
+<html>
+    <head>
+        <title>TA_2: Employee Layout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+    </head>
+    <body>
+       <!--NAVIGATION Bar-->
+        <div class="container-fluid">
+            <div class="row">
+            <nav class="navbar navbar-default">
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                <a class="nav navbar-brand">Employee Directory</a>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-6">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                </div>
+                <div class="col-xs-12 col-sm-3 col-md-3">
+                <form class="navbar-form navbar-right">
+                    <input type="text" placeholder="Search" class="img-rounded">
+                </form>
+                </div>
+            </nav>
+            </div>
+        </div>
+        <!--End of NAVIGATION Bar-->
+        <!--JUMBOTRON Container-->
+        <div class="container">
+            <div class="row jumbotron">
+                <div class="row">
+                <div class="thumbnail col-sm-5"><!--IMAGE-->
+                    <img src="images/2.jpg" alt="Image" class="image-responsive">
+                </div>
+                <div class="col-sm-7"><!--WELCOME section-->
+                    <h2><strong>Welcome to Employee Directory</strong></h2>
+                    <h4 class="text-justify">Employee directory is a sample app that demonstrates how to build modern web applications using different frameworks. This version is built with <a href="#">Backbone.js</a> and <a href="#">Twitter Bootstrap</a>.</h4>
+                </div>
+                </div>
+                <!--SOCIAL BUTTONS with POPUP EFFECT-->
+                <div class="row">
+                    <div class="col-sm-3"><button class="btn btn-sm btn-default" data-toggle="popover" data-placement="right" data-content="1,220"><img src="images/git.png" alt="Github" width="20px" height="20px"> Star</button></div>
+                    <div class="col-sm-3"><button class="btn btn-sm btn-default" data-toggle="popover" data-placement="right" data-content="313"><img src="images/git.png" alt="Github" width="20px" height="20px"> Fork</button></div>
+                    <div class="col-sm-3"><button class="btn btn-sm btn-default" data-toggle="popover" data-placement="right" data-content="0"><img src="images/twitter.png" alt="Github" width="20px" height="20px"> Tweet</button></div>
+                    <div class="col-sm-3"><button class="btn btn-sm btn-default" data-toggle="popover" data-placement="right" data-content="5,167 followers"><img src="images/twitter.png" alt="Github" width="20px" height="20px"> Follow @dhrubo_smm</button></div>
+                </div>
+            </div>
+            <!--Enf of JUMBOTRON-->
+            <!--GALLERY-->
+            <div class="row">
+                <div class="col-sm-4">
+                    <h1><strong>Try It</strong></h1>
+                    <p class="text-justify">Enter a few characters in the Search Box in the upper right corner of the screen, and select an employee. In the Employee view, you can navigate up and down the Org Chart by clicking either the Manager link, or one of the Direct Reports in the sidebar on the right of the screen.</p>
+                    <button class="btn btn-default"><strong><a href="#">Show me &Gt;</a></strong></button>
+                </div>
+                <div class="col-sm-4">
+                    <h1><strong>Get the Code</strong></h1>
+                    <p class="text-justify">The source code fot this application is maintained in <a href="#">this Github respository</a>. The repository includes several adapters to use the application with different data persistance solutions: in-memory store, REST API, REST with JSONP, Node.js, MongoDB, etc.</p><br>
+                    <button class="btn btn-default"><strong><a href="#">Download &Gt;</a></strong></button>
+                </div>
+                <div class="col-sm-4">
+                    <h1><strong>Get More</strong></h1>
+                    <p class="text-justify">The Empoyee Directory use case is simple enough to be easily understandable. It's also not entirely trivial and provides a good playground to test frameworks in a real-life context. Other versions of the application built with other frameworks ate available on the author's blog.</p>
+                    <button class="btn btn-default"><strong><a href="">Visit the blog</a></strong></button>
+                </div>
+            </div>
+            <!--End of GALLERY-->
+            <hr>
+            <!--COPYRIGHT Section-->
+            <div>
+                <p>&copy; Md Mehedi Hasan Nahid 2015.<a href="#"> Follow me</a> on Twitter.</p>
+            </div>
+        </div>    
+        </div>
+        <script src="js/jquery-1.11.3.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('[data-toggle="popover"]').popover();
+            });
+        </script>
+    </body>
+</html>
